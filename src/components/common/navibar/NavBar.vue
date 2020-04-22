@@ -1,8 +1,8 @@
 <template>
-  <div class='navi-bar'>
+  <div class='nav-bar'>
     <div class="left"><slot name="left"></slot></div>
-    <div class="center" name="center"><slot></slot></div>
-    <div class="right" name="right"><slot></slot></div>
+    <div class="center"><slot name="center"></slot></div>
+    <div class="right"><slot name="right" ></slot></div>
   </div>
 </template>
 
@@ -21,13 +21,18 @@ export default {
 <style scoped>
   .nav-bar {
     display: flex;
+    height: 44px;
     line-height: 44px;
+    /* 一般导航栏高度式 44px */
+    box-shadow:0 2px 1px rgb(100,100,100,0.1);
   }
   .left, .right{
     width: 60px;
   }
   .center {
     flex: 1;
+    text-align: center;
+    color:white;
   }
   
 </style>

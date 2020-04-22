@@ -12,6 +12,7 @@ module.exports = {
       .set('@network',resolve('src/network'))
       .set('@store',resolve('src/store'))
       .set('@components',resolve('src/components'))
+      .set('@views',resolve('src/views'))
       // 这里只写了两个个，你可以自己再加，按这种格式.set('', resolve(''))
   }
 };
